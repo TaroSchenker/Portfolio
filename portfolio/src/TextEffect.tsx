@@ -7,7 +7,7 @@ const TextEffect1 = () => {
     let style2 = document.createElement("style")
     let after = document.getElementById("after-te1")
     let before = document.getElementById("before-te1")
-    const setKeyframesRules = (n, start = 0) => {
+    const setKeyframesRules = (n:any, start = 0) => {
       let steps = ""
       for (let i = start; i <= n; i++) {
         let percent = (i / n) * 100
