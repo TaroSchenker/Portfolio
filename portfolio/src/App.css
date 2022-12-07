@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+
+*{
+  font-family: 'Orbitron', sans-serif;
+}
+
+#tv-static {
+  background-image: repeating-conic-gradient(white, black 0.00085%);
+  animation: back 25s linear infinite;
+}
+
+@keyframes back {
+    from {
+    background-size: 100% 100%;
+  }
+  to {
+    background-size: 200% 200%;
+  }
+}
