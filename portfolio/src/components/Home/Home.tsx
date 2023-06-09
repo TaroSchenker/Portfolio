@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="flex flex-col items-center justify-center h-screen bg-gray-800 text-white px-4 sm:px-0"
+      className="flex flex-col items-center justify-center h-screen bg-gray-800 text-white px-4 pb-80 sm:px-0"
       ref={myRef}
     >
       <animated.div style={fadeIn} className="flex flex-col items-center">

@@ -14,7 +14,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-20 px-6 sm:px-12 lg:px-24 text-center bg-blue-100"
+      className="py-20 px-6 pb-80 pt-40 sm:px-12 lg:px-24 text-center bg-blue-100"
     >
       <div className="mx-auto max-w-2xl">
         <Element name="contact" className="section">

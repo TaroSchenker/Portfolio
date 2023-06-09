@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className="fixed w-full z-50 bg-gray-900 text-white p-4">
       <nav className="container mx-auto flex items-center justify-between">
-        <h1 className="font-extrabold text-2xl">John Smith</h1>
+        <h1 className="font-extrabold text-2xl">Taro Schenker</h1>
         <div className="hidden md:block">
           <Link
             activeClass="active"
