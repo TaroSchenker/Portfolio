@@ -14,7 +14,7 @@ const About = () => {
     <section id="about" className="flex flex-col items-center py-20 px-6 sm:px-12 lg:px-24 bg-gray-800 text-white">
       <animated.div style={fadeIn} className="mx-auto max-w-2xl text-left">
         <img src={profileImage} alt="John Smith" className="mx-auto w-48 h-48 rounded-full mb-8" />
-        <Element name="portfolio" className="section">
+        <Element name="about" className="section">
         <h2 className="text-4xl mb-6 font-semibold">About Me</h2>
         </Element>
         <p className="text-lg leading-relaxed mb-4">

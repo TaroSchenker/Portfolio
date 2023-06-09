@@ -1,5 +1,5 @@
-import React from 'react';
-import { useSpring, animated, config } from 'react-spring';
+import React, { useEffect, useRef } from "react";
+import { useSpring, animated, config } from "react-spring";
 import { Element } from "react-scroll";
 
 const Home = () => {
@@ -10,16 +10,40 @@ const Home = () => {
     config: config.molasses,
   });
 
+  const myRef = useRef(null);
+  
+  const executeScroll = () => {
+    myRef.current.scrollIntoView();
+  };
+
+  useEffect(() => {
+    executeScroll();
+  }, []);
+
   return (
-    <Element name="home" className="section">
-    <section id="home" className="flex flex-col items-center justify-center h-screen bg-gray-800 text-white px-4 sm:px-0">
-      <animated.div style={fadeIn}>
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-4">Welcome to My Portfolio</h1>
-        <p className="text-lg md:text-xl lg:text-2xl text-center mb-8">I'm John Smith, a React Developer. Explore my work and feel free to reach out.</p>
-        <a href="#portfolio" className="bg-white text-gray-800 py-3 px-6 rounded-full font-bold text-lg md:text-xl lg:text-2xl transition-all hover:bg-gray-700 hover:text-white">View My Work</a>
+    <section
+      id="home"
+      className="flex flex-col items-center justify-center h-screen bg-gray-800 text-white px-4 sm:px-0"
+      ref={myRef}
+    >
+      <animated.div style={fadeIn} className="flex flex-col items-center">
+        <Element name="home" className="section">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-4">
+            Welcome to My Portfolio
+          </h1>
+        </Element>
+        <p className="text-lg md:text-xl lg:text-2xl text-center mb-8">
+          I'm John Smith, a React Developer. Explore my work and feel free to
+          reach out.
+        </p>
+        <a
+          href="#portfolio"
+          className="bg-white text-gray-800 py-3 px-6 rounded-full font-bold text-lg md:text-xl lg:text-2xl transition-all hover:bg-gray-700 hover:text-white"
+        >
+          View My Work
+        </a>
       </animated.div>
     </section>
-    </Element>
   );
 };
 
