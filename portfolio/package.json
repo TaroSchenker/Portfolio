@@ -10,11 +10,18 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-grid-system": "^8.1.9",
+    "react-hook-form": "^7.44.3",
+    "react-modal": "^3.16.1",
+    "react-scroll": "^1.8.9",
+    "react-scrollspy": "^3.4.3",
+    "react-spring": "^9.7.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
+    "@types/react-modal": "^3.16.0",
     "@vitejs/plugin-react": "^2.1.0",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.19",

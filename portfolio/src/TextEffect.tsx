@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-const TextEffect1 = () => {
+const TextEffect = () => {
 
   useEffect(() => {
     let style1 = document.createElement("style")
@@ -30,12 +30,12 @@ const TextEffect1 = () => {
   return (
     <div className="h-full flex justify-center items-center ">
       <h1 className="text-black text-4xl font-bold uppercase relative inline-block">
-        <span id="before-te1" className="absolute top-0 left-0.5 w-full h-full bg-transparent" style={{ textShadow: "-200px 0 #FFFFFF", clipPath: "rect(240px, 550px, 90px, 0)" }} aria-hidden="true">Taro Schenker</span> {/* glitch::before */}
+        <span id="before-te1" className="absolute top-0 left-0.5 w-full h-full bg-transparent" style={{ textShadow: "-900px 0 #FFFFFF", clipPath: "rect(2040px, 5050px, 900px, 0)" }} aria-hidden="true"> HATE CRIMES</span> {/* glitch::before */}
         Taro Schenker
-        <span id="after-te1" className="absolute top-0 -left-0.5 w-full h-full bg-transparent" style={{ textShadow: "-200px 0 spin(#FF0000, 180)", clipPath: "rect(85px, 550px, 140px, 0)" }} aria-hidden="true">Taro Schenker</span> {/* glitch::after */}
+        <span id="after-te1" className="absolute top-0 -left-0.5 w-full h-full bg-transparent" style={{ textShadow: "-200px 0 spin(#FF0000, 180)", clipPath: "rect(850px, 550px, 140px, 0)" }} aria-hidden="true">HATE CRIMES</span> {/* glitch::after */}
       </h1>
     </div>
   )
 }
 
-export default TextEffect1
+export default TextEffect
