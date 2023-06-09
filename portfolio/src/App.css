@@ -17,3 +17,8 @@
     background-size: 200% 200%;
   }
 }
+
+.active {
+  color: blue;
+}
+

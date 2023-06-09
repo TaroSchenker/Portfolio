@@ -20,6 +20,7 @@ import {
   SiEslint,
   SiPrettier,
 } from "react-icons/si"; // Install react-icons
+import { Element } from "react-scroll";
 
 const Skills = () => {
   const fadeIn = useSpring({
@@ -57,7 +58,9 @@ const Skills = () => {
       className="py-20 px-6 sm:px-12 lg:px-24 bg-gray-800 text-white text-center"
     >
       <animated.div style={fadeIn}>
-        <h2 className="text-4xl mb-6 font-semibold">Skills</h2>
+        <Element name="skills" className="section">
+          <h2 className="text-4xl mb-6 font-semibold">Skills</h2>
+        </Element>
         <div className="flex flex-wrap justify-center gap-8">
           {techSkills.map((skill) => (
             <div key={skill.id} className="flex flex-col items-center">
