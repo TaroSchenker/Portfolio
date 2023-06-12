@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from 'react';
+/* eslint-disable react/no-unescaped-entities */
+import { useEffect, useRef } from 'react';
 import { useSpring, animated, config } from 'react-spring';
 import { Element } from 'react-scroll';
 
@@ -45,7 +46,7 @@ const Home = () => {
             View My Work
           </a>
         </animated.div>
-      </section>{' '}
+      </section>
     </Element>
   );
 };
