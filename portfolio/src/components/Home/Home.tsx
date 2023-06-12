@@ -10,10 +10,12 @@ const Home = () => {
     config: config.molasses,
   });
 
-  const myRef = useRef(null);
-  
+  const myRef = useRef<HTMLElement | null>(null);
+
   const executeScroll = () => {
-    myRef.current.scrollIntoView();
+    if (myRef.current){
+       myRef.current.scrollIntoView();
+    }
   };
 
   useEffect(() => {
