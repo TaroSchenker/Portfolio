@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link, scroller } from "react-scroll";
+import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,7 +7,6 @@ const Header = () => {
   const handleClose = () => {
     setIsOpen(false);
   };
-  console.log("about scroll", scroller.getActiveLink());
   return (
     <header className="fixed w-full z-50 bg-gray-900 text-white p-4">
       <nav className="container mx-auto flex items-center justify-between">
