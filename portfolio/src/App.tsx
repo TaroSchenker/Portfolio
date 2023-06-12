@@ -10,14 +10,7 @@ import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
 
 function App() {
-  const [count, setCount] = useState(0);
-  function handleClick() {
-    alert("hi");
-  }
   return (
-    //   <div className="h-screen" id='tv-static'>
-    //     <TextEffect/>
-    // </div>
     <>
       <Header />
       <Home />
