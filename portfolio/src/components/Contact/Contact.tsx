@@ -11,15 +11,15 @@ const Contact = () => {
 
   const onSubmit = (data: any) => console.log(data);
   console.log("contat scroll", scroller.getActiveLink())
-  return (
+  return (        <Element name="contact" className="section">
     <section
       id="contact"
       className="py-20 px-6 pb-80 pt-40 sm:px-12 lg:px-24 text-center bg-blue-100"
     >
       <div className="mx-auto max-w-2xl">
-        <Element name="contact" className="section">
+
           <h2 className="text-4xl mb-6 font-semibold">Contact Me</h2>
-        </Element>
+     
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           <input
             {...register("name", { required: true })}
@@ -51,7 +51,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
-    </section>
+    </section>   </Element>
   );
 };
 
