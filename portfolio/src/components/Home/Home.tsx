@@ -35,7 +35,7 @@ const Home = () => {
           </h1>
         </Element>
         <p className="text-lg md:text-xl lg:text-2xl text-center mb-8">
-          I'm John Smith, a React Developer. Explore my work and feel free to
+          I'm Taro Schenker, a React Developer. Explore my work and feel free to
           reach out.
         </p>
         <a
